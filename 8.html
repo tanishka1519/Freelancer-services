@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanishka's Creative Desk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(135deg, #F8E9DD, #C5A8F1, #96E3D2);
+      background-size: cover;
+      color: #2A2A2A;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .section {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      border-radius: 1.5rem;
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .header img.logo {
+      width: 150px;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      color: #462F6C;
+    }
+
+    .tagline {
+      color: #DB5C1C;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+
+    .service-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .service-icons div {
+      text-align: center;
+    }
+
+    .service-icons span {
+      display: block;
+      font-size: 2rem;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #1A1A1A;
+    }
+
+    .section ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .section ul li {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .contact a {
+      color: #462F6C;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .qr {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    img.qr-code {
+      width: 120px;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+
+    .about-me {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-photo {
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-photo img {
+      width: 200px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 1rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="section header">
+      <img src="/mnt/data/logo.jpg" alt="Service Logo" class="logo" />
+      <h1>Tanishka's Creative Desk</h1>
+      <p class="tagline">Crafting Your Success, One Project at a Time</p>
+      <div class="service-icons">
+        <div><span>📄</span>Resume</div>
+        <div><span>🎨</span>Logo</div>
+        <div><span>📊</span>Data Entry</div>
+        <div><span>📽️</span>PowerPoint</div>
+        <div><span>📈</span>Excel</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>About My Freelancing Business</h2>
+      <p>Big dreams? Messy tasks? Bring them to Tanishka’s Creative Desk. From glow-up resumes to scroll-stopping logos and smooth data magic — I get it done, fast and fab. 6+ happy clients, 4.8 stars, and counting. Ready when you are!
+
+What started as a small desk with big ideas is now a go-to spot for students, professionals, and small businesses who want their work to shine. Whether you’re applying for your dream job, building your brand, or just need clean, crisp presentations — I’m here to make it easy, quick, and exactly the way you want.
+
+At Tanishka’s Creative Desk, every project gets personal attention, because I believe in creating not just work, but wow moments. Ready to upgrade your game? Let’s create something awesome together!.</p>
+    </div>
+
+    <div class="section">
+      <h2>Services & Pricing</h2>
+      <ul>
+        <li>📄 Resume Writing – starting at ₹100</li>
+        <li>🎨 Logo Designing – starting at ₹100</li>
+        <li>📊 Data Entry – starting at ₹100</li>
+        <li>📽️ PowerPoint & Excel Work – starting at ₹100</li>
+        <li>⚙️ Prices may vary based on specific needs and complexity.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Client Ratings</h2>
+      <p>⭐ 4.8 / 5 from 6+ happy clients</p>
+      <p>✅ 100% Satisfaction | 🚚 Fast Delivery</p>
+    </div>
+
+    <div class="section">
+      <h2>Request a Service</h2>
+      <p>Please fill out the form below with your details and service request:</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKfExampleFormLink/viewform?usp=sf_link"></iframe>
+    </div>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <div class="about-me">
+        <div class="about-text">
+          <p>Hi, I’m Tanishka — a final year BBA (FinTech) student and an intern at Genpact, where I’m sharpening my skills in the real-world business space. Along with my studies, I run Tanishka’s Creative Desk, helping people and businesses with resume writing, logo designing, PowerPoint magic, Excel tasks, and more.
+
+I’ve got a strong hand in Microsoft Office tools and a good eye for details that make work stand out. Whether it’s organizing data, designing creatives, or managing tasks smoothly, I love turning ideas into results. Balancing studies, work, and freelancing has taught me how to deliver quality, fast and right.</p>
+        </div>
+        <div class="about-photo">
+          <img src="/mnt/data/your-photo.jpg" alt="Tanishka's Photo" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section contact">
+      <h2>Contact Me</h2>
+      <p>📧 Email: <a href="mailto:tanishkakashyap15@gmail.com">tanishkakashyap15@gmail.com</a></p>
+      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/tanishkakashyap" target="_blank">linkedin.com/in/tanishkakashyap</a></p>
+      <div class="qr">
+        <img src="/mnt/data/Tanishka's Creative Desk Services.png" alt="QR Code" class="qr-code" />
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+
+</html>
